@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Arrays in JS</title>
+    <script type="text/javascript">
+        var cars = ["Saab", "Volvo", "BMW"];
+
+        document.write("The Array is " + cars + "<br/>");
+        document.write("Array value in specific position" + cars[1]);
+
+        document.write("<h1>Array length " + cars.length + "</h1>");
+
+
+
+        var fruits, text, fLen, i;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+        //Ordered Representation 
+        text = "<ol>";
+        for (i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ol>";
+        document.write("Order representation of Array")
+        document.write(text)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

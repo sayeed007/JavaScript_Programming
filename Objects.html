@@ -1,0 +1,41 @@
+<html>
+ <head>
+ <title>Functions in JS</title>
+ <script type="text/javascript">
+ 
+ //Basic Object
+ var Car = 
+ {
+ car_brand :"Tesla",
+ car_model : "Model 3",
+ price : 35000,
+ teslaAutoPilot : function()
+ {  document.write("This car has Auto pilot");  }
+ };
+
+Car.teslaAutoPilot();
+
+document.write("<br />"+Car.price);
+
+//Object Constructor Function –
+function Cars(car_brand,car_model,price)
+ {
+ this.car_brand = car_brand;
+ this.car_model = car_model;
+ this.price = price;
+ this.teslaAutoPilot = function()
+ {  document.write("<h2>This car has Auto pilot</h2>"); }
+ };
+ 
+ var c1 = new Cars("Tesla","Model 3", 35000);
+ var c2 = new Cars("Tesla","Model P", 45000);
+ 
+ c1.teslaAutoPilot();
+ document.write(c1.price)
+ document.write("<h2>Car "+c2.car_model)
+ 
+ </script>
+ </head>
+ <body>
+ </body>
+</html>

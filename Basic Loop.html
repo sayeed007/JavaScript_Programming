@@ -1,0 +1,78 @@
+<html>
+ <head>
+ <title>My title</title>
+ <script type="text/javascript">
+     //Basic Output
+     document.write("<h1>Basic & Loops</h1>");
+
+     //If-Else
+     var i = 10; 
+     if (i > 15) 
+     document.write("10 is less than 15"); 
+     else
+     document.write("10 is less than 15"); 
+
+     //Switch-Case
+     var x = 3;
+     switch(x)
+     {
+     case 0:
+     document.writeln("<h1>Sunday</h1>");
+     break;
+     case 1:
+     document.writeln("<h1>Monday</h1>");
+     break;
+     case 2:
+     document.writeln("<h1>Tuesday</h1>");
+     break;
+     case 3:
+     document.writeln("<h1>Wednesday</h1>");
+     break;
+     case 4:
+     document.writeln("<h1>Thursday</h1>");
+     break;
+     case 5:
+     document.writeln("<h1>Friday</h1>");
+     break;
+     case 6:
+     document.writeln("<h1>Saturday</h1>");
+     break;
+     default:
+     document.writeln("<h1>Enter correct value</h1>");
+     }
+
+     //For-Loop
+     var count;
+     document.write("Starting <b>For Loop</b>" + "<br />");
+         
+     for(count = 0; count < 10; count++)
+     {
+     document.write("Current Count : " + count );
+     document.write("<br />");
+     }
+     document.write("Loop stopped!"+"<br />");
+
+     //While-Loop
+     var x = 10;
+     document.write("Starting <b>While Loop</b>" + "<br />");
+     while (x >= 0) 
+     { 
+        document.write("Value of x:" + x + "<br />"); 
+        x--; 
+     }
+     document.write("Loop stopped!"+"<br />"); 
+
+     //Do-While-Loop
+     document.write("Starting <b>Do-While</b> Loop" + "<br />");
+     var x = 10; 
+     do 
+     { 
+     document.write("Value of x:" + x + "<br />"); 
+     x = x+2; 
+     } while (x <= 20);
+
+ </script>
+ </head> 
+ <body> 
+ </body>
+</html>
